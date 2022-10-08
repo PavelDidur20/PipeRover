@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+     <script type = "text/javascript" src = "three.min.js" ></script>
+    <title>ESP32 OV2460</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #181818;
+            color: #EFEFEF;
+            font-size: 16px
+        }
+        
+        #view {
+            border: 1px solid red;
+        }
+        
+        h2 {
+            font-size: 18px
+        }
+        
+        section.main {
+            display: flex
+        }
+        
+        #menu,
+        section.main {
+            flex-direction: column
+        }
+        
+        #menu {
+            display: none;
+            flex-wrap: nowrap;
+            min-width: 340px;
+            background: #363636;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: -10px;
+            margin-right: 10px
+        }
+        
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch
+        }
+        
+        figure {
+            padding: 0;
+            margin: 0;
+            -webkit-margin-before: 0;
+            margin-block-start: 0;
+            -webkit-margin-after: 0;
+            margin-block-end: 0;
+            -webkit-margin-start: 0;
+            margin-inline-start: 0;
+            -webkit-margin-end: 0;
+            margin-inline-end: 0
+        }
+        
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 8px
+        }
+        
+        @media (min-width: 800px) and (orientation:landscape) {
+            #content {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: stretch
+            }
+            figure img {
+                display: block;
+                max-width: 100%;
+                max-height: calc(100vh - 40px);
+                width: auto;
+                height: auto
+            }
+            figure {
+                padding: 0;
+                margin: 0;
+                -webkit-margin-before: 0;
+                margin-block-start: 0;
+                -webkit-margin-after: 0;
+                margin-block-end: 0;
+                -webkit-margin-start: 0;
+                margin-inline-start: 0;
+                -webkit-margin-end: 0;
+                margin-inline-end: 0
+            }
+        }
+        
+        section#buttons {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between
+        }
+        
+        #nav-toggle {
+            cursor: pointer;
+            display: block
+        }
+        
+        #nav-toggle-cb {
+            outline: 0;
+            opacity: 0;
+            width: 0;
+            height: 0
+        }
+        
+        #nav-toggle-cb:checked+#menu {
+            display: flex
+        }
+        
+        .input-group {
+            display: flex;
+            flex-wrap: nowrap;
+            line-height: 22px;
+            margin: 5px 0
+        }
+        
+        .input-group>label {
+            display: inline-block;
+            padding-right: 10px;
+            min-width: 47%
+        }
+        
+        .input-group input,
+        .input-group select {
+            flex-grow: 1
+        }
+        
+        .range-max,
+        .range-min {
+            display: inline-block;
+            padding: 0 5px
+        }
+        
+        button {
+            display: block;
+            margin: 5px;
+            padding: 0 12px;
+            border: 0;
+            line-height: 28px;
+            cursor: pointer;
+            color: #fff;
+            background: #ff3034;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: 0
+        }
+        
+        button:hover {
+            background: #ff494d
+        }
+        
+        button:active {
+            background: #f21c21
+        }
+        
+        button.disabled {
+            cursor: default;
+            background: #a0a0a0
+        }
+        
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 135%;
+            height: 22px;
+            background: #363636;
+            cursor: pointer;
+            margin: 0
+        }
+        
+        input[type=range]:focus {
+            outline: 0
+        }
+        
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 2px;
+            cursor: pointer;
+            background: #EFEFEF;
+            border-radius: 0;
+            border: 0 solid #EFEFEF
+        }
+        
+        input[type=range]::-webkit-slider-thumb {
+            border: 1px solid rgba(0, 0, 30, 0);
+            height: 22px;
+            width: 22px;
+            border-radius: 50px;
+            background: #ff3034;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -11.5px
+        }
+        
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            background: #EFEFEF
+        }
+        
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 2px;
+            cursor: pointer;
+            background: #EFEFEF;
+            border-radius: 0;
+            border: 0 solid #EFEFEF
+        }
+        
+        input[type=range]::-moz-range-thumb {
+            border: 1px solid rgba(0, 0, 30, 0);
+            height: 22px;
+            width: 22px;
+            border-radius: 50px;
+            background: #ff3034;
+            cursor: pointer
+        }
+        
+        input[type=range]::-ms-track {
+            width: 100%;
+            height: 2px;
+            cursor: pointer;
+            background: 0 0;
+            border-color: transparent;
+            color: transparent
+        }
+        
+        input[type=range]::-ms-fill-lower {
+            background: #EFEFEF;
+            border: 0 solid #EFEFEF;
+            border-radius: 0
+        }
+        
+        input[type=range]::-ms-fill-upper {
+            background: #EFEFEF;
+            border: 0 solid #EFEFEF;
+            border-radius: 0
+        }
+        
+        input[type=range]::-ms-thumb {
+            border: 1px solid rgba(0, 0, 30, 0);
+            height: 22px;
+            width: 22px;
+            border-radius: 50px;
+            background: #ff3034;
+            cursor: pointer;
+            height: 2px
+        }
+        
+        input[type=range]:focus::-ms-fill-lower {
+            background: #EFEFEF
+        }
+        
+        input[type=range]:focus::-ms-fill-upper {
+            background: #363636
+        }
+        
+        .switch {
+            display: block;
+            position: relative;
+            line-height: 22px;
+            font-size: 16px;
+            height: 22px
+        }
+        
+        .switch input {
+            outline: 0;
+            opacity: 0;
+            width: 0;
+            height: 0
+        }
+        
+        .slider {
+            width: 50px;
+            height: 22px;
+            border-radius: 22px;
+            cursor: pointer;
+            background-color: grey
+        }
+        
+        .slider,
+        .slider:before {
+            display: inline-block;
+            transition: .4s
+        }
+        
+        .slider:before {
+            position: relative;
+            content: "";
+            border-radius: 50%;
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            top: 3px;
+            background-color: #fff
+        }
+        
+        input:checked+.slider {
+            background-color: #ff3034
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            transform: translateX(26px)
+        }
+        
+        select {
+            border: 1px solid #363636;
+            font-size: 14px;
+            height: 22px;
+            outline: 0;
+            border-radius: 5px
+        }
+        
+        .image-container {
+            position: relative;
+            min-width: 160px
+        }
+        
+        .close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background: #ff3034;
+            width: 16px;
+            height: 16px;
+            border-radius: 100px;
+            color: #fff;
+            text-align: center;
+            line-height: 18px;
+            cursor: pointer
+        }
+        
+        .hidden {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <p><span id="fps">fps: ?</span></p>
+    <img id="view">
+    <section class="main">
+        <section id="buttons">
+            <table>
+                <tr>
+                    <td align="center">
+                        <button id="get-image">Снимок</button>
+                    </td>
+                    <td></td>
+                    <td align="center">
+                        <button id="start-stop">Start Stream</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center">
+                        <button id="forward" onmousedown="fetch(document.location.origin+'/control?var=car&val=1');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');">Forward</button>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <button id="turnleft" onmousedown="fetch(document.location.origin+'/control?var=car&val=2');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');">TurnLeft</button>
+                    </td>
+                    <td align="center">
+                        <button id="stop" onclick="fetch(document.location.origin+'/control?var=car&val=3');">Stop</button>
+                    </td>
+                    <td align="center">
+                        <button id="turnright" onmousedown="fetch(document.location.origin+'/control?var=car&val=4');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');">TurnRight</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center">
+                        <button id="backward" onmousedown="fetch(document.location.origin+'/control?var=car&val=5');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');">Backward</button>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td align="center" colspan="2">
+                        <input type="range" id="speed" min="0" max="255" value="128" onchange="try{fetch(document.location.origin+'/control?var=speed&val='+this.value);}catch(e){}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Camera Vert</td>
+                    <td align="center" colspan="2">
+                        <input type="range" id="servo" min="500" max="2500" value="1200" onchange="try{fetch(document.location.origin+'/control?var=servo&val='+this.value);}catch(e){}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Camera Hor</td>
+                    <td align="center" colspan="2">
+                        <input type="range" id="servo" min="500" max="2500" value="1200" onchange="try{fetch(document.location.origin+'/control?var=servo1&val='+this.value);}catch(e){}">
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Battery:</td>
+                    <td align="center" colspan="2">
+                        <output id="battery" style="font-style:italic"> Info </output>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Gyroscope:</td>
+                    <td align="center" colspan="2">
+                        <output id="gyro" style="font-style:italic"> Info </output>
+                    </td>
+                 </tr>
+                    <tr>
+                        <td>Mileage:</td>
+                        <td align="center" colspan="2">
+                            <output id="mileage" style="font-style:italic"> Info </output>
+                        </td>
+                    </tr>
+            </table>
+        </section>
+    </section>
+    <script>
+ 
+        const BASE_URL = document.location.origin;
+        const MJPEG_URL = "http://192.168.4.1:8080/?action=stream";
+        const SOI = new Uint8Array([0xff, 0xd8]);
+        const CONTENT_LENGTH = 'Content-Length';
+        const TYPE_JPEG = 'image/jpeg';
+        let controller;
+        let reader;
+        let headers = '';
+        let contentLength = -1;
+        let imageBuffer = null;
+        let imageBlob = null;
+        let bytesCounter = 0;
+        let frames = 0;
+
+        function fetchTelemtry() {
+            let info_url = `${BASE_URL}/info`;
+            console.log(info_url);
+            var time1 = Date.now();
+            fetch(info_url).then(function(response) {
+                setTimeout(fetchTelemtry(), 1000);
+                return response.json();
+            }).then(function(infoJson) {
+                let data = JSON.stringify(infoJson);
+                console.log(infoJson);
+                var battery_label = document.getElementById("battery");
+                var gyro_label = document.getElementById("gyro");
+                var mileage_label = document.getElementById("mileage");
+                battery_label.value = infoJson['voltage'];
+                mileage_label.value = infoJson['distance'];
+                gyro_label.value = "x= " + infoJson['gyro_x'];
+                var time2 = Date.now();
+                console.log(time2 - time1);
+                
+            });
+        }
+
+        fetchTelemtry();
+
+        setInterval(() => {
+            document.getElementById('fps').textContent = 'fps: ' + frames;
+            frames = 0;
+        }, 1000);
+        const getContentLength = headers => {
+            return headers.split('\n')
+                .find(header => header.startsWith(CONTENT_LENGTH))
+                .split(':')[1];
+        };
+        const readData = () => {
+            reader.read().then(({
+                    done, value
+                }) => {
+                    if (done) return;
+                    for (let index = 0; index < value.length; index++) {
+                        if (value[index] === SOI[0] && value[index + 1] === SOI[1]) {
+                            contentLength = getContentLength(headers);
+                            imageBuffer = new Uint8Array(new ArrayBuffer(contentLength));
+                        }
+                        if (contentLength <= 0) {
+                            headers += String.fromCharCode(value[index]);
+                        } else if (bytesCounter < contentLength) {
+                            imageBuffer[bytesCounter++] = value[index];
+                        } else {
+                            imageBlob = URL.createObjectURL(new Blob([imageBuffer], {
+                                type: TYPE_JPEG
+                            }));
+                            document.getElementById('view').src = imageBlob;
+                            frames++;
+                            contentLength = 0;
+                            bytesCounter = 0;
+                            headers = '';
+                        }
+                    }
+                    readData();
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        };
+
+        function startStream() {
+            controller = new AbortController();
+            fetch(MJPEG_URL, {
+                    signal: controller.signal
+                })
+                .then(response => {
+                    if (!response.ok) throw Error(response.statusText);
+                    reader = response.body.getReader();
+                    readData();
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+
+        function stopStream() {
+            controller.abort();
+        }
+        const startStopButton = document.getElementById('start-stop');
+        startStopButton.addEventListener('click', event => {
+            if (startStopButton.innerHTML === 'Stop stream') {
+                startStopButton.innerHTML = 'Start stream';
+                stopStream();
+            } else {
+                startStopButton.innerHTML = 'Stop stream';
+                startStream();
+            }
+        })
+        
+        document.getElementById('get-image').addEventListener('click', (event) => {
+                let a = document.createElement('a');
+                a.href = BASE_URL+'/snapshot';
+                a.download = new Date().toLocaleString() + '.jpg';
+                a.click();
+                //window.open(BASE_URL + '/snapshot');
+               //fetch(BASE_URL+'/snapshot');
+            });
+        document.addEventListener('DOMContentLoaded', function() {
+            function b(B) {
+                let C;
+                switch (B.type) {
+                    case 'checkbox':
+                        C = B.checked ? 1 : 0;
+                        break;
+                    case 'range':
+                    case 'select-one':
+                        C = B.value;
+                        break;
+                    case 'button':
+                    case 'submit':
+                        C = '1';
+                        break;
+                    default:
+                        return;
+                }
+                const D = `${c}/control?var=${B.id}&val=${C}`;
+                fetch(D).then(E => {
+                    console.log(`request to ${D} finished, status: ${E.status}`)
+                })
+            }
+            var c = document.location.origin;
+            const e = B => {
+                    B.classList.add('hidden')
+                },
+                f = B => {
+                    B.classList.remove('hidden')
+                },
+                g = B => {
+                    B.classList.add('disabled'), B.disabled = !0
+                },
+                h = B => {
+                    B.classList.remove('disabled'), B.disabled = !1
+                },
+                i = (B, C, D) => {
+                    D = !(null != D) || D;
+                    let E;
+                    'checkbox' === B.type ? (E = B.checked, C = !!C, B.checked = C) : (E = B.value, B.value = C), D && E !== C ? b(B) : !D && ('aec' === B.id ? C ? e(v) : f(v) : 'agc' === B.id ? C ? (f(t), e(s)) : (e(t), f(s)) : 'awb_gain' === B.id ? C ? f(x) : e(x) : 'face_recognize' === B.id && (C ? h(n) : g(n)))
+                };
+            document.querySelectorAll('.close').forEach(B => {
+                B.onclick = () => {
+                    e(B.parentNode)
+                }
+            }), fetch(`${c}/status`).then(function(B) {
+                return B.json()
+            }).then(function(B) {
+                document.querySelectorAll('.default-action').forEach(C => {
+                    i(C, B[C.id], !1)
+                })
+            });
+            const j = document.getElementById('stream'),
+                k = document.getElementById('stream-container'),
+                l = document.getElementById('get-still'),
+                m = document.getElementById('toggle-stream'),
+                n = document.getElementById('face_enroll'),
+                o = document.getElementById('close-stream'),
+                p = () => {
+                    window.stop(), m.innerHTML = 'Start Stream'
+                },
+                q = () => {
+                    j.src = `${c+':81'}/stream`, f(k), m.innerHTML = 'Stop Stream'
+                };
+            l.onclick = () => {
+                p(), j.src = `${c}/capture?_cb=${Date.now()}`, f(k)
+            }, o.onclick = () => {
+                p(), e(k)
+            }, m.onclick = () => {
+                const B = 'Stop Stream' === m.innerHTML;
+                B ? p() : q()
+            }, n.onclick = () => {
+                b(n)
+            }, document.querySelectorAll('.default-action').forEach(B => {
+                B.onchange = () => b(B)
+            });
+            const r = document.getElementById('agc'),
+                s = document.getElementById('agc_gain-group'),
+                t = document.getElementById('gainceiling-group');
+            r.onchange = () => {
+                b(r), r.checked ? (f(t), e(s)) : (e(t), f(s))
+            };
+            const u = document.getElementById('aec'),
+                v = document.getElementById('aec_value-group');
+            u.onchange = () => {
+                b(u), u.checked ? e(v) : f(v)
+            };
+            const w = document.getElementById('awb_gain'),
+                x = document.getElementById('wb_mode-group');
+            w.onchange = () => {
+                b(w), w.checked ? f(x) : e(x)
+            };
+            const y = document.getElementById('face_detect'),
+                z = document.getElementById('face_recognize'),
+                A = document.getElementById('framesize');
+            A.onchange = () => {
+                b(A), 5 < A.value && (i(y, !1), i(z, !1))
+            }, y.onchange = () => {
+                return 5 < A.value ? (alert('Please select CIF or lower resolution before enabling this feature!'), void i(y, !1)) : void(b(y), !y.checked && (g(n), i(z, !1)))
+            }, z.onchange = () => {
+                return 5 < A.value ? (alert('Please select CIF or lower resolution before enabling this feature!'), void i(z, !1)) : void(b(z), z.checked ? (h(n), i(y, !0)) : g(n))
+            }
+        });
+    </script>
+</body>
+
+</html>

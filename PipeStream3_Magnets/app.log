@@ -1,0 +1,68 @@
+werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:37] "GET / HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:37] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:38] "GET /status HTTP/1.1" 404 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:38] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:39] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:40] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 1
+root - INFO - LOG 2
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:41] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:42] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:43] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 3
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:44] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:45] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:46] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 4
+root - INFO - LOG 5
+root - INFO - LOG 6
+root - INFO - LOG 7
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:47] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 8
+root - INFO - LOG 9
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:48] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 9 (sending img)
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:49] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:49] "GET /snapshot HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:50] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:51] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:52] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:53] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:54] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:55] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:56] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:57] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:57] "GET /getlog HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:58] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:22:59] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:00] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:01] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:02] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:03] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:04] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:05] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:06] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:07] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:08] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:09] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:10] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:11] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:12] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:13] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:14] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:15] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:16] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:17] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:18] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:19] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:20] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:21] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:22] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:23] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:24] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:25] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:26] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:27] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:28] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [26/Nov/2019 23:23:29] "GET /info HTTP/1.1" 200 -

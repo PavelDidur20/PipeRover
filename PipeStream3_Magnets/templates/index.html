@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>ESP32 OV2460</title>
+	<meta name="description" content="ESP32 OV2460">
+	<link rel="shortcut icon" href="static/img/favicon/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="static/css/normalize.css">
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+<div class="site-wrap">
+	<main>
+		<section class="panel">
+			<div class="container">
+				<div class="panel-img">
+					<span id="fps">0 fps</span>
+					<img src="" alt="" id="view">
+				</div>
+				<div class="panel-container">
+					<div class="panel-wrap1">
+						<div class="panel-btn-container">
+							<div class="panel-btn-wrap1">
+								<div id="forward" class="button forward" onmousedown="fetch(document.location.origin+'/control?var=car&val=1');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');"></div>
+								<div class="panel-btn-wrap3">
+									<div id="turnleft" class="button turnleft" onmousedown="fetch(document.location.origin+'/control?var=car&val=2');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');"></div>
+									<div id="stop" class="button stop" onclick="fetch(document.location.origin+'/control?var=car&val=3');"></div>
+									<div id="turnright" class="button turnright" onmousedown="fetch(document.location.origin+'/control?var=car&val=4');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');"></div>
+								</div>
+								<div id="backward" class="button backward" onmousedown="fetch(document.location.origin+'/control?var=car&val=5');" onmouseup="fetch(document.location.origin+'/control?var=car&val=3');"></div>
+							</div>
+								<div class="panel-btn-wrap2">
+								<div id="start-stop" class="button disable"></div>
+								<div id="get-image" class="button screen"></div>
+								<div class="panel-btn-wrap2-1">
+									<div id="mag_up" class="button mgn-up" onmousedown="fetch(document.location.origin+'/control?var=magnet_up&val=1');" onmouseup="fetch(document.location.origin+'/control?var=magnet_up&val=0')";></div>
+								<div id="mag_down" class="button mgn-down" onmousedown="fetch(document.location.origin+'/control?var=magnet_down&val=1');" onmouseup="fetch(document.location.origin+'/control?var=magnet_down&val=0')";></div>
+								
+								</div>
+								<div class="magnet_text">Магниты</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-wrap2">
+						<div class="panel-range-wrap">
+							<div class="panel-range">
+								<span>Скорость:</span>
+								<input type="range" id="speed" min="0" max="128" value="64" onchange="try{fetch(document.location.origin+'/control?var=speed&val='+this.value);}catch(e){}">
+							</div>
+							<div class="panel-range">
+								<span>Камера Вер:</span>
+								<input type="range" id="servo" min="500" max="2500" value="1200" onchange="try{fetch(document.location.origin+'/control?var=servo&val='+this.value);}catch(e){}">
+							</div>
+							<div class="panel-range">
+								<span>Камера Гор:</span>
+								<input type="range" id="servo" min="500" max="2500" value="1200" onchange="try{fetch(document.location.origin+'/control?var=servo1&val='+this.value);}catch(e){}">
+							</div>
+						</div>
+						<div class="panel-info-wrap">
+							<div class="panel-info">
+								<span>Заряд:</span>
+								<output id="battery"></output>
+							</div>
+							<div class="panel-info">
+								<span>Гироскоп X:</span>
+								<output id="gyro"></output>
+							</div>
+							<div class="panel-info">
+								<span>Гироскоп Y:</span>
+								<output id="gyroy"></output>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</div>
+<script src="static/js/main.js"></script> 
+</body>
+</html>

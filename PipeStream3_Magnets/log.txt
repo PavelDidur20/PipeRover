@@ -1,0 +1,561 @@
+bytearray(b'gyro:180.78\r\nDistance:0.00\r\nDistance:0.00\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.00\r\nBat:11.36\r\n')
+File name = 2019-11-26 22:18:18.176006.jpg
+
+Trying to take image
+
+Trying to tale img
+Resolution
+
+bytearray(b'gyro:180.83\r\nDistance:0.00\r\nBat:11.27\r\n')
+Rotation
+
+Taking image
+
+bytearray(b'gyro:181.12\r\nDistance:0.00\r\nBat:11.44\r\n')
+Complete taking image
+
+Complete taking img
+bytearray(b'gyro:180.92\r\nDistance:0.00\r\nBat:11.32\r\n')
+File name = 2019-11-26 22:18:22.492856.jpg
+
+Trying to take image
+
+Trying to tale img
+Resolution
+
+Rotation
+
+Taking image
+
+Complete taking image
+
+Complete taking img
+File name = 2019-11-26 22:18:31.583462.jpg
+
+Trying to take image
+
+Trying to tale img
+Resolution
+
+Rotation
+
+Taking image
+
+Complete taking image
+
+Complete taking img
+bytearray(b'gyro:180.85\r\nDistance:0.00\r\nDistance:0.00\r\n')
+bytearray(b'gyro:180.52\r\nDistance:0.01\r\nBat:11.27\r\n')
+File name = 2019-11-26 22:18:35.005703.jpg
+
+Trying to take image
+
+Trying to tale img
+Resolution
+
+Rotation
+
+Taking image
+
+bytearray(b'gyro:181.79\r\nDistance:0.01\r\nBat:11.35\r\n')
+Complete taking image
+
+Complete taking img
+bytearray(b'gyro:180.93\r\nDistance:0.01\r\nBat:11.35\r\n')
+File name = 2019-11-26 22:18:37.814318.jpg
+
+Trying to take image
+
+Trying to tale img
+Resolution
+
+Rotation
+
+Taking image
+
+Complete taking image
+
+Complete taking img
+bytearray(b'gyro:180.92\r\nDistance:0.01\r\nDistance:0.01\r\n')
+bytearray(b'e:0.01\r\nBat:11.23\r\nBat:11.23\r\n')
+bytearray(b'yro:180.82\r\nDistance:0.01\r\nDistance:0.01\r\n')
+bytearray(b':0.01\r\nBat:11.18\r\nBat:11.18\r\n')
+bytearray(b'ro:180.83\r\nDistance:0.01\r\nDistance:0.01\r\n')
+var = car 
+ val = 5
+var = car 
+ val = 3
+bytearray(b'gyro:180.83\r\nDistance:0.41\r\nBat:11.38\r\n')
+bytearray(b'ce:0.41\r\nBat:11.32\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.33\r\n')
+File name = 2019-11-26 22:22:47.133696.jpg
+
+Trying to take image
+
+Trying to tale img
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nDistance:0.42\r\n')
+bytearray(b'gyro:180.89\r\nDistance:0.42\r\nDistance:0.42\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.65\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.18\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.88\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.47\r\nDistance:0.42\r\nBat:11.15\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.88\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.42\r\nBat:11.23\r\n')
+bytearray(b'gyro:180.96\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:181.01\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:181.36\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.91\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.82\r\nDistance:0.42\r\nBat:11.18\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.24\r\n')
+bytearray(b'gyro:182.02\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.64\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.69\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.92\r\nDistance:0.42\r\nBat:11.18\r\n')
+bytearray(b'gyro:182.46\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:182.76\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.93\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.96\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.72\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.84\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:181.36\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:179.96\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.99\r\nDistance:0.42\r\nBat:11.23\r\n')
+bytearray(b'gyro:181.53\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.72\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:181.15\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.45\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:181.50\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.85\r\nDistance:0.42\r\nBat:11.24\r\n')
+bytearray(b'gyro:181.05\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:182.17\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:182.34\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:180.92\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.89\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.94\r\nDistance:0.42\r\nBat:11.23\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.42\r\nBat:11.17\r\n')
+bytearray(b'gyro:180.82\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.88\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.97\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.82\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.82\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.56\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.86\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.52\r\nDistance:0.42\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.35\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.85\r\nDistance:0.42\r\n')
+bytearray(b'at:11.30\r\ngyro:180.81\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.78\r\nDistance:0.42\r\n')
+bytearray(b't:11.27\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.35\r\ngyro:182.16\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:182.90\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.33\r\ngyro:180.75\r\nDistance:0.42\r\n')
+bytearray(b't:11.30\r\ngyro:180.72\r\nDistance:0.42\r\n')
+bytearray(b't:11.23\r\ngyro:180.75\r\nDistance:0.42\r\n')
+bytearray(b'at:11.27\r\ngyro:180.78\r\nDistance:0.42\r\n')
+bytearray(b'at:11.32\r\ngyro:180.95\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.24\r\ngyro:180.55\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.38\r\ngyro:180.90\r\nDistance:0.42\r\n')
+bytearray(b'at:11.38\r\ngyro:180.10\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.29\r\ngyro:182.47\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.33\r\ngyro:182.57\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:180.79\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.73\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.21\r\ngyro:180.98\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.30\r\ngyro:182.14\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.26\r\ngyro:180.76\r\nDistance:0.42\r\n')
+bytearray(b't:11.17\r\ngyro:181.53\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.78\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.29\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.23\r\ngyro:180.78\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.30\r\ngyro:180.79\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'at:11.32\r\ngyro:180.24\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.84\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.33\r\ngyro:180.83\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.30\r\ngyro:180.75\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.30\r\ngyro:180.81\r\nDistance:0.42\r\n')
+bytearray(b':11.32\r\ngyro:181.23\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.38\r\ngyro:180.75\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.23\r\ngyro:180.79\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.24\r\ngyro:180.76\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.30\r\ngyro:182.33\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:180.83\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:180.74\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:181.93\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.35\r\ngyro:181.12\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:181.49\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:180.74\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.79\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.76\r\nDistance:0.42\r\n')
+bytearray(b'at:11.21\r\ngyro:180.73\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.35\r\ngyro:180.80\r\nDistance:0.42\r\n')
+bytearray(b'at:11.24\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'at:11.24\r\ngyro:180.67\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:180.95\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.26\r\ngyro:180.79\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.38\r\ngyro:180.75\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.21\r\ngyro:180.69\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.23\r\ngyro:180.80\r\nDistance:0.42\r\n')
+bytearray(b'gyro:182.31\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.93\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.71\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:181.04\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.89\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.91\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.84\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.84\r\nDistance:0.42\r\nBat:11.15\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.24\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.42\r\nDistance:0.42\r\n')
+bytearray(b't:11.29\r\ngyro:181.08\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.23\r\ngyro:180.82\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.24\r\ngyro:180.76\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:182.01\r\nDistance:0.42\r\n')
+bytearray(b'1.32\r\ngyro:180.84\r\nDistance:0.42\r\n')
+bytearray(b'at:11.38\r\ngyro:180.80\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.36\r\ngyro:181.13\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.32\r\ngyro:180.79\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.30\r\ngyro:180.75\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.36\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.24\r\ngyro:180.78\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.21\r\ngyro:180.75\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.31\r\nDistance:0.42\r\n')
+bytearray(b'11.35\r\ngyro:180.78\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.21\r\ngyro:182.17\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.15\r\ngyro:180.81\r\nDistance:0.42\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.77\r\nDistance:0.42\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:180.69\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.15\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.85\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:181.09\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.42\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.42\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.90\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:181.71\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:181.25\r\nDistance:0.42\r\nDistance:0.42\r\n')
+bytearray(b'gyro:181.04\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.24\r\n')
+bytearray(b'gyro:180.73\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:181.69\r\nDistance:0.42\r\nBat:11.15\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:181.00\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.23\r\n')
+bytearray(b'gyro:181.00\r\nDistance:0.42\r\nBat:11.18\r\n')
+bytearray(b'gyro:181.35\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.84\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:181.40\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.68\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:181.68\r\nDistance:0.42\r\nBat:11.18\r\n')
+bytearray(b'gyro:180.96\r\nDistance:0.42\r\nBat:11.15\r\n')
+bytearray(b'gyro:180.44\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.17\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:181.09\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:180.73\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.89\r\nDistance:0.42\r\nDistance:0.42\r\n')
+bytearray(b'gyro:180.89\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.24\r\n')
+bytearray(b'gyro:181.07\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.87\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:181.43\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.73\r\nDistance:0.42\r\nBat:11.35\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.18\r\n')
+bytearray(b'gyro:180.46\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.86\r\nDistance:0.42\r\nBat:11.15\r\n')
+bytearray(b'gyro:181.41\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:182.08\r\nDistance:0.42\r\nBat:11.33\r\n')
+bytearray(b'gyro:181.68\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.82\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:181.00\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:181.84\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.89\r\nDistance:0.42\r\nBat:11.15\r\n')
+bytearray(b'gyro:181.55\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:181.97\r\nDistance:0.42\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.56\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.38\r\n')
+bytearray(b'gyro:180.54\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.42\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.26\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.74\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:181.12\r\nDistance:0.42\r\nBat:11.24\r\n')
+bytearray(b'gyro:181.44\r\nDistance:0.42\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.42\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.42\r\nBat:11.30\r\n')
+var = car 
+ val = 5
+bytearray(b'gyro:180.85\r\nDistance:0.54\r\nBat:11.30\r\n')
+var = car 
+ val = 3
+bytearray(b'gyro:180.79\r\nDistance:0.55\r\nDistance:0.55\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.59\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.59\r\nBat:11.21\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.59\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.59\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.59\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.58\r\nDistance:0.59\r\nBat:11.30\r\n')
+bytearray(b'gyro:181.07\r\nDistance:0.59\r\nBat:11.24\r\n')
+bytearray(b'gyro:181.02\r\nDistance:0.59\r\nDistance:0.59\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.59\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.59\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.59\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.59\r\nBat:11.26\r\n')
+bytearray(b'gyro:180.82\r\nDistance:0.59\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.59\r\nBat:11.18\r\n')
+bytearray(b'gyro:180.84\r\nDistance:0.59\r\nBat:11.26\r\n')
+bytearray(b'gyro:180.78\r\nDistance:0.59\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.84\r\nDistance:0.59\r\nBat:11.27\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.59\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.23\r\ngyro:180.77\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.30\r\ngyro:180.79\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.35\r\ngyro:181.85\r\nDistance:0.59\r\n')
+bytearray(b':11.21\r\ngyro:180.80\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.27\r\ngyro:180.88\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.15\r\ngyro:182.94\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.38\r\ngyro:180.83\r\nDistance:0.59\r\n')
+bytearray(b'at:11.29\r\ngyro:180.44\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.29\r\ngyro:180.79\r\nDistance:0.59\r\n')
+bytearray(b'at:11.30\r\ngyro:182.30\r\nDistance:0.59\r\n')
+bytearray(b'at:11.26\r\ngyro:180.32\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.30\r\ngyro:180.69\r\nDistance:0.59\r\n')
+bytearray(b'at:11.35\r\ngyro:180.81\r\nDistance:0.59\r\n')
+bytearray(b'Bat:11.24\r\ngyro:182.51\r\nDistance:0.59\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.59\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.79\r\nDistance:0.59\r\nBat:11.17\r\n')
+bytearray(b'gyro:180.86\r\nDistance:0.59\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.83\r\nDistance:0.59\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.77\r\nDistance:0.59\r\nBat:11.36\r\n')
+bytearray(b'gyro:180.76\r\nDistance:0.59\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.59\r\nBat:11.30\r\n')
+bytearray(b'gyro:180.73\r\nDistance:0.59\r\nBat:11.29\r\n')
+bytearray(b'gyro:180.80\r\nDistance:0.59\r\nBat:11.30\r\n')
+bytearray(b'yro:.77stae:0.11.24\r\nyr.7\nDance59\r\n')
+bytearray(b'g180\r\nDinc59\r\nBat:go:1807\rist:0.:11.29\r\n')
+bytearray(b'yro0.75istnc059\r\na21\rg:180.\nis\n')
+bytearray(b'g:18\r\nDae:.Bt:11.\nyro77\rDtance:0.59\rat:11.18\r\n')
+bytearray(b'go:1stan\nBa11.30\r\nyro:18Dit:11.26\r\n')
+bytearray(b'g0.84\r\nstance:0.59\r\nBago180.77\r\n')
+bytearray(b'Distance:0.59\r\nBat:11.32\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.59\r\nBat:11.21\r\n')
+bytearray(b'gyro80.75\r\n0.59\r\nBa11.24\r\n')
+bytearray(b':1Distance:t:gro:180.76\r\nDistance:0.59\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.75\r\nDistance:0.59\r\nBat:11.32\r\n')
+bytearray(b'go:16\r\nD:0.59\r\nBat:111\r\n')
+bytearray(b'g:1.4\nDit59\r\nBat:11.32\r\n')
+bytearray(b'yro1\r\nDistance:\nBat:gyr81\r\n')
+bytearray(b'g:181.70.59\r11.30\r\no:181.stance:0.59\r\nBat:11.32\r\n')
+bytearray(b'gyro:180.81\r\nDistance:0.59\r\nBat:11.35\r\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+var = car 
+ val = 4
+var = car 
+ val = 3
+var = car 
+ val = 3
+var = car 
+ val = 4
+bytearray(b'yro8160\r\nBat:126\r\nBat:126\r\n')
+bytearray(b'g:1.34\r\nDistance:0.1.yr180.39\r\nDistance:0.61\r\n')
+bytearray(b'Bat:11.32\r\nyr:8.3\nDnce.61Ba:1.\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'g:181\r\ntanc63Bat:6\r\nyro:87\r\n')
+bytearray(b'go108\rista:0\r\nt121\ryro.22Dise:0.\r\n11.2g180.Distance:0.63\r\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'go107\rDistance:0.63\r\nBat\r\nyro.69\r\n')
+bytearray(b'g:180ance:0.65\r\nBat:11.23\r\nyr:80\r\n')
+bytearray(b'go1.74Distance:0.65\r\nBat:11.15\r\nyr:13\r\n')
+var = car 
+ val = 3
+var = car 
+ val = 4
+bytearray(b'go80.7Distance:0.65\r\nBat:11.23\r\nyro0.39\ritnce66\rt:1\r\n')
+bytearray(b'g:18\nDsa:0.\nBa1.26g\r\n')
+bytearray(b'g1877\nnc0.\nBat.23\n')
+bytearray(b'yro:180.85Distance:0.66\r\nBat:11.26\r\nyro:0.\rDistae:66\r:11\ryro:.74\r\n')
+var = car 
+ val = 3
+var = car 
+ val = 2
+bytearray(b'ro:1.\r\nDance6\r\na.27\n')
+bytearray(b'g180Distance:0.66\r\nBat:11.23\r\ngy1834ist:0.6Bt:11\ryro:.8Dince8\r\n')
+var = car 
+ val = 2
+var = car 
+ val = 3
+bytearray(b'g1807\r\nsta:0.6Bat:11.32\r\ngtance:0.68\r\n')
+var = car 
+ val = 2
+var = car 
+ val = 3
+var = car 
+ val = 2
+var = car 
+ val = 3
+bytearray(b'go80.\nDince:9\r\nBa1\r\n')
+var = car 
+ val = 2
+var = car 
+ val = 3
+bytearray(b'yro:180.48\r\nDis:11.15\r\nyr:169\rsta0.6t:1.33ro:18\r\n')
+var = car 
+ val = 3
+var = car 
+ val = 2
+bytearray(b'gy80.4Distance:1.70\r\nBat:11.27\r\nyro:189\rstan1\r\n')
+bytearray(b'g:107\nDise:172\r\nBat:11.27\r\n')
+bytearray(b'g1.\r\ntn:1.\nBa:.6\r\n')
+bytearray(b'yro:38\rDanc72\r\n11.\nyro:.77Disc:12\r\n')
+bytearray(b'g182.\niste:1.Bat:23\rg180\r\ntane.7Bat:11.30\r\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'go1066stae:1\r\nBa26\nyr:180ista\r\n')
+bytearray(b'yr:8.\r\nDinc.72t:11.\rgo.44\r\nDnce:1.72Bat:11.32\r\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'yro:181.84\r\nDis15\r\ng80.\r\n')
+bytearray(b'gtance:1.72\r\nBat:11.yro:178Distance:1.72\r\nBat:11.18\r\n')
+bytearray(b'g:1070iste:72\r\n11.\ryr:8.7\nDae:1\r\n')
+bytearray(b'yro8.\r\nDanc1.Bat:27\ngo107\ristnc.72Bat:11.30\r\n')
+bytearray(b'gy80.7Dance72\r\n11.2\nyro:70stance:1.72\r\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'g:171\rista1.72t:.\r\nyr0.\r\nDiste.2\r\n')
+bytearray(b'yro80.\nDnce:\r\nBa1126go:1873anc:17Bat:11.32\r\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'g0.71\r\nnc172\rB:1\r\nyro0.9\n')
+bytearray(b'yro:18Distae:.\nat1.23g:188\rance:1.72\r\nBat:11.24\r\n')
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'yro:68\r\nanc72\rt:11\nyr:8.\r\n')
+var = car 
+ val = 4
+bytearray(b'g180.Diste:1.\nBa.32\rgo1073istance:1.72\r\nBat:11.24\r\n')
+var = car 
+ val = 3
+var = car 
+ val = 4
+var = car 
+ val = 3
+bytearray(b'yro0.74sta:1.7t:11\nyro18\r\nDice.7\n')
+bytearray(b'g:18\r\nDince3\r\nBa.29\rg:0.75stan:13\rBat:11.27\r\n')
+var = car 
+ val = 1
+64
+var = car 
+ val = 3
+bytearray(b'yro:180.74\r\nDie:1.73\r:11.32\r\nyro812\riste:1.\n')
+bytearray(b'gstanc\nBatg:12.\nDanc73\rBat:11.21\r\n')
+var = car 
+ val = 1
+64
+var = car 
+ val = 3
+var = car 
+ val = 5
+var = car 
+ val = 3
+bytearray(b'yro1.3\nisnc:13\r:11.yro:\nDistance\r\n')
+bytearray(b'g:185\rDtae.7\nBat32\r\ng180.64\r:1.73Bat:11.14\r\n')
