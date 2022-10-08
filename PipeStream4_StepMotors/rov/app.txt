@@ -1,0 +1,133 @@
+werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:10] "GET / HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:10] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:10] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:11] "GET /status HTTP/1.1" 404 -
+root - INFO - LOG 1
+root - INFO - Filename would be 2019-11-27 01:43:11.415762.jpg
+root - INFO - LOG 2
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:11] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:12] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 3
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:13] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:14] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 4
+root - INFO - LOG 5
+root - INFO - LOG 6
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:15] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 7
+root - INFO - LOG 8
+root - INFO - LOG 9
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:16] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:17] "GET /info HTTP/1.1" 200 -
+root - INFO - LOG 9 (sending img filename = 2019-11-27 01:43:11.415762.jpg)
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:18] "GET /snapshot HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:18] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:19] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:20] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:21] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:22] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:23] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:24] "GET /control?var=car&val=1 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:24] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:25] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:26] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:27] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:28] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:29] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:30] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:31] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:32] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:33] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:34] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:35] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:36] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:37] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:39] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:46] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:46] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:47] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:48] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:49] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:43:50] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:45:18] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:45:18] "GET /control?var=car&val=1 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:48:43] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:48:44] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:48:59] "GET /control?var=car&val=1 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:48:59] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:00] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:00] "GET /control?var=car&val=4 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:01] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:01] "GET /control?var=car&val=2 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:02] "GET /control?var=car&val=4 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:02] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:02] "GET /control?var=car&val=4 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:02] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:02] "GET /control?var=car&val=4 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:02] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:03] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:03] "GET /control?var=car&val=2 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:03] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:03] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:04] "GET /control?var=car&val=2 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:49:04] "GET /control?var=car&val=2 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:50:26] "GET /control?var=car&val=1 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:50:33] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:51:01] "GET /control?var=car&val=1 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:51:05] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:51:14] "GET /control?var=speed&val=201 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:51:23] "GET /control?var=car&val=1 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:51:24] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:51:25] "GET /control?var=car&val=1 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:51:26] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:21] "GET / HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:21] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:21] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:22] "GET /status HTTP/1.1" 404 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:22] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:22] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:23] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:23] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:23] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:24] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:25] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:27] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:26:27] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:51] "GET / HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:51] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:51] "GET /status HTTP/1.1" 404 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:52] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:53] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:54] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:55] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:55] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:56] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:58] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:59] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:28:59] "GET /snapshot HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:00] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:00] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:02] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:03] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:04] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:05] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:06] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:06] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:06] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:06] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:29:08] "GET /info HTTP/1.1" 200 -
+werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:45] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:46] "GET /control?var=car&val=3 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:46] "GET /control?var=car&val=5 HTTP/1.1" 204 -
+werkzeug - INFO - 192.168.4.11 - - [27/Nov/2019 01:34:46] "GET /control?var=car&val=3 HTTP/1.1" 204 -
