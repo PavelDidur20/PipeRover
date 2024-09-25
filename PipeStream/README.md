@@ -1,10 +1,26 @@
-# RC-Car-Webserver
-A Flask webserver with controls and camera for a remote control vehicle built with a Raspberry Pi. 
-![screenCapture](photos/robotviewgif.gif)
+# WiFi Робот на базе Raspberry Pi и Arduino
 
-The server is run on the pi on localhost and then it displays a live feed from the camera attached to the raspberry pi.
-By pressing forward, backwards, left or right the robot can be moved in that direction. The pi has two motors with wheels attached to move it. It is powered by micro-usb portable charger. 
+## Описание проекта
 
-![screenCapture](photos/robot.gif)
+Данный проект представляет собой управляемого по WiFi робота, в основе которого лежит Raspberry Pi с Flask сервером на Python для управления и видеостриминга с камеры, а Arduino используется для низкоуровневого управления моторами и передачи данных на Raspberry Pi.
 
+## Основные компоненты:
+- **Raspberry Pi**: Основной управляющий блок, выполняющий роль сервера для управления роботом через веб-интерфейс. Реализован с использованием Flask (Python), включает видеостриминг с камеры и передачу команд на Arduino.
+- **Arduino**: Низкоуровневый модуль управления моторами. Обрабатывает команды от Raspberry Pi и управляет двигателями робота, а также отправляет сенсорные данные обратно на Raspberry Pi.
+- **Камера**: Подключена к Raspberry Pi для стриминга видео в реальном времени через веб-интерфейс.
+- **WiFi**: Используется для подключения робота к сети и обеспечения удаленного управления через веб-браузер.
 
+## Функциональность:
+1. **Управление движением**: Робот управляется через веб-интерфейс с помощью команд, отправляемых на сервер Flask. Raspberry Pi передает эти команды на Arduino, который управляет двигателями.
+2. **Видеостриминг**: Камера, подключенная к Raspberry Pi, обеспечивает потоковое видео, которое можно просматривать через веб-интерфейс в реальном времени.
+3. **Сенсоры и данные**: Arduino собирает данные с датчиков (например, гироскопа или других), и отправляет их на Raspberry Pi для отображения или использования в логике управления.
+
+## Структура проекта:
+- **Raspberry Pi**:
+  - Flask сервер для управления роботом.
+  - Стриминг видео с камеры.
+  - Веб-интерфейс для управления движением и мониторинга.
+- **Arduino**:
+  - Управление моторами.
+  - Сбор данных с датчиков.
+  - Передача данных на Raspberry Pi.
