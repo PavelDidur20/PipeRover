@@ -24,5 +24,9 @@
   - Управление моторами.
   - Сбор данных с датчиков.
   - Передача данных на Raspberry Pi.
+
+
 ![alt text](https://github.com/PavelDidur20/PipeRover/blob/main/image1.jpg?raw=true)
+
+
 ![alt text](https://github.com/PavelDidur20/PipeRover/blob/main/image2.jpg?raw=true)
