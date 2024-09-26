@@ -1,59 +1,37 @@
 from flask import Flask, render_template, Response, request, jsonify, send_file
-import time # Import the Time library
+import time
 import serial
 import pigpio
 from threading import Thread, Event
-import subprocess, signal
-
-from readline import ReadLine
+import subprocess
+import signal
+import os
+import os.path as path
 import picamera
 import datetime
 import logging
-import os.path as path
-import os
+from readline import ReadLine
 
+# Определение пинов
 SERVO_V = 21
 SERVO_H = 20
-
-
-pi = pigpio.pi()
-
-
 MOT_FWD_A = 9
 MOT_FWD_B = 10
 MOT_BWD_A = 8
 MOT_BWD_B = 7
-SERVO_V = 21
-SERVO_H = 20
 LED = 4
 
+# Настройки частоты и ШИМ
 FRQ = 1000
 DUTY = 64
 
+# Путь к скрипту камеры
+CAMSTREAM_SCRIPT = '/home/pi/rov/script.sh'
 
+# Инициализация pigpio
+pi = pigpio.pi()
 
-cwd = os.getcwd()
-
-CAMSTREAM_SCRIPT =   '/home/pi/rov/script.sh'
-
-
-
-
-ser = serial.Serial(
-               port='/dev/ttyS0',
-               baudrate = 9600
-           )
-
-    
-
-serial_data = ""
-EMPTY_DATA = "0.0"
-
-
-prevGyro = EMPTY_DATA
-prevMetres = EMPTY_DATA
-prevBatt = EMPTY_DATA
-
+# Настройка PWM для двигателей и светодиодов
 pi.set_PWM_dutycycle(MOT_FWD_A, 0)
 pi.set_PWM_dutycycle(MOT_FWD_B, 0)
 pi.set_PWM_dutycycle(MOT_BWD_A, 0)
@@ -67,236 +45,198 @@ pi.set_PWM_frequency(MOT_BWD_B, FRQ)
 pi.set_PWM_dutycycle(LED, 0)
 pi.set_PWM_frequency(LED, 50)
 
+# Настройка последовательного порта
+try:
+    ser = serial.Serial(
+        port='/dev/ttyS0',
+        baudrate=9600
+    )
+except serial.SerialException as e:
+    logging.error(f"Ошибка при инициализации последовательного порта: {e}")
+    ser = None
 
+# Глобальные переменные для хранения предыдущих данных
+prev_gyro = "0.0"
+prev_metres = "0.0"
+prev_batt = "0.0"
 
-    
-def kill_proc(proc):
-        p = subprocess.Popen(['ps', '-ax'],  stdout=subprocess.PIPE)
-        out,err = p.communicate()
+# Вспомогательные функции
+def kill_proc(proc_name):
+    """Остановка процесса по имени."""
+    try:
+        p = subprocess.Popen(['ps', '-ax'], stdout=subprocess.PIPE)
+        out, err = p.communicate()
         for line in out.splitlines():
-            if (proc in str(line, encoding='utf-8')):
-                pid = int(line.split(None,1)[0])
+            if proc_name in str(line, encoding='utf-8'):
+                pid = int(line.split(None, 1)[0])
                 os.kill(pid, signal.SIGKILL)
-                
-        
-def setServoPosition(servoPin, newPosition):
-        pi.set_servo_pulsewidth(servoPin, newPosition)
-        print(newPosition)
-    
+    except Exception as e:
+        logging.error(f"Ошибка при остановке процесса {proc_name}: {e}")
 
-def StopMotors():
+def set_servo_position(servo_pin, new_position):
+    """Установка позиции сервопривода."""
+    pi.set_servo_pulsewidth(servo_pin, new_position)
+    logging.info(f"Сервопривод {servo_pin} установлен в позицию {new_position}")
+
+def stop_motors():
+    """Остановка всех моторов."""
     pi.set_PWM_dutycycle(MOT_FWD_A, 0)
     pi.set_PWM_dutycycle(MOT_FWD_B, 0)
     pi.set_PWM_dutycycle(MOT_BWD_A, 0)
     pi.set_PWM_dutycycle(MOT_BWD_B, 0)
 
-
-# Turn both motors forwards AF = 1 AB = 0 BF = 1 BB = 0
-def Forwards(): 
-    print(DUTY)
+def forwards():
+    """Движение вперед."""
     pi.set_PWM_dutycycle(MOT_FWD_A, DUTY)
     pi.set_PWM_dutycycle(MOT_FWD_B, DUTY)
     pi.set_PWM_dutycycle(MOT_BWD_A, 0)
     pi.set_PWM_dutycycle(MOT_BWD_B, 0)
 
-def Backwards():
+def backwards():
+    """Движение назад."""
     pi.set_PWM_dutycycle(MOT_FWD_A, 0)
     pi.set_PWM_dutycycle(MOT_FWD_B, 0)
     pi.set_PWM_dutycycle(MOT_BWD_A, DUTY)
     pi.set_PWM_dutycycle(MOT_BWD_B, DUTY)
 
-# Turn right
-def Right():
-    pi.set_PWM_dutycycle(MOT_FWD_A, 0) 
+def right():
+    """Поворот направо."""
+    pi.set_PWM_dutycycle(MOT_FWD_A, 0)
     pi.set_PWM_dutycycle(MOT_FWD_B, DUTY)
     pi.set_PWM_dutycycle(MOT_BWD_A, DUTY)
-    pi.set_PWM_dutycycle(MOT_BWD_B, 0) 
+    pi.set_PWM_dutycycle(MOT_BWD_B, 0)
     time.sleep(0.1)
-    StopMotors()
+    stop_motors()
 
-# Turn left
-def Left():
-    pi.set_PWM_dutycycle(MOT_FWD_A, DUTY) 
+def left():
+    """Поворот налево."""
+    pi.set_PWM_dutycycle(MOT_FWD_A, DUTY)
     pi.set_PWM_dutycycle(MOT_FWD_B, 0)
     pi.set_PWM_dutycycle(MOT_BWD_A, 0)
-    pi.set_PWM_dutycycle(MOT_BWD_B, DUTY)     
+    pi.set_PWM_dutycycle(MOT_BWD_B, DUTY)
     time.sleep(0.1)
-    StopMotors()
-    
+    stop_motors()
 
-
+# Flask сервер
 app = Flask(__name__)
 
 @app.route('/')
-def execute():
+def home():
     return render_template('index.html')
-
-
-
-    
- 
-serialEvent = Event()
-
 
 @app.route("/info", methods=['GET'])
 def telemetry():
+    """Получение данных телеметрии от Arduino."""
+    global prev_batt, prev_gyro, prev_metres
 
-    global prevBatt
-    global prevGyro
-    global prevMetres
-    
-    gyro = None
-    battery = None
-    metres = None
-    global serial_data
-   
-    
-    rl = ReadLine(ser)
-    data1 = rl.readline()
-    data2 = rl.readline()
-    data3 = rl.readline()
-    
-    serial_data =  data1+data2+data3
-    #print(serial_data)
-    
-    data_str = str(serial_data, 'utf-8')
-    
-    index_b = data_str.find('Bat')
-    if (index_b is not -1):
-        battery = data_str[index_b+4:index_b+9]
-    else:
-        battery = EMPTY_DATA
-    
-    
-    index_g = data_str.find('gyro')
-    if (index_g is not -1):
-        gyro = data_str[index_g+5:index_g+11]
-    else:
-        gyro = EMPTY_DATA
-        
-    
-    index_d = data_str.find('Distance')
-    if (index_d is not -1):
-        metres = data_str[index_d+9:index_d+15]
-    else:
-        metres = EMPTY_DATA
-    
+    if ser is None:
+        return jsonify(voltage=prev_batt, gyro_x=prev_gyro, distance=prev_metres)
 
- 
-    if (index_g is not -1):
-        prevGyro = gyro
-    else:
-        gyro = prevGyro
-        
-    if (index_b is not -1):
-        prevBatt = battery
-    else:
-        battery = prevBatt
-        
-    if (index_d is not -1):
-        prevMetres = metres
-    else:
-        metres = prevMetres
-   
-   
-    return jsonify(voltage=battery,
-                   gyro_x=gyro,
-                   distance=metres)
-    
+    try:
+        rl = ReadLine(ser)
+        data1 = rl.readline()
+        data2 = rl.readline()
+        data3 = rl.readline()
+        serial_data = data1 + data2 + data3
+        data_str = str(serial_data, 'utf-8')
+    except Exception as e:
+        logging.error(f"Ошибка при чтении данных с последовательного порта: {e}")
+        return jsonify(voltage=prev_batt, gyro_x=prev_gyro, distance=prev_metres)
+
+    battery = extract_value(data_str, 'Bat', prev_batt)
+    gyro = extract_value(data_str, 'gyro', prev_gyro)
+    metres = extract_value(data_str, 'Distance', prev_metres)
+
+    prev_batt = battery
+    prev_gyro = gyro
+    prev_metres = metres
+
+    return jsonify(voltage=battery, gyro_x=gyro, distance=metres)
+
+def extract_value(data_str, keyword, prev_value):
+    """Извлечение значения из строки данных."""
+    index = data_str.find(keyword)
+    if index != -1:
+        return data_str[index+len(keyword)+1:index+len(keyword)+6]
+    return prev_value
 
 @app.route("/control", methods=['GET'])
-def remoteControl():
+def remote_control():
+    """Обработка управляющих команд для робота."""
     global DUTY
-    var =request.args.get('var')
+    var = request.args.get('var')
     val = int(request.args.get('val'))
-    print("var = %s \n val = %d" % (var, val)) 
-    if (var == "car"):
-        if (val == 1):
-            Forwards()
-        elif (val == 2):
-            Left()
-        elif  (val == 3):
-            StopMotors()
-        elif (val == 4):
-            Right()
-        elif (val == 5):
-            Backwards()
 
-    elif (var == "servo"):
-        if (val < 1100):
-            setServoPosition(SERVO_V, 1100)
-        elif (val > 2400):
-            setServoPosition(SERVO_V, 2400)
-        else:
-            setServoPosition(SERVO_V, val)
-            
-    elif (var == "servo1"):
-        if (val < 500):
-            setServoPosition(SERVO_H, 500)
-        elif (val > 2300):
-            setServoPosition(SERVO_H, 2300)
-        else:
-            setServoPosition(SERVO_H, val)
-        
-    elif (var == "speed"):
-        if (val > 240):
-            DUTY = 240
-        elif (val < 0):
-            DUTY = 0
-        else:
-            DUTY = val
-    elif (var == "led"):
-         if (val > 255):
-             pi.set_PWM_dutycycle(LED,255)
-         elif (val < 0):
-             pi.set_PWM_dutycycle(LED, 0)
-         else:
-             pi.set_PWM_dutycycle(LED, val)
+    if var == "car":
+        car_control(val)
+    elif var == "servo":
+        set_servo_position(SERVO_V, val)
+    elif var == "servo1":
+        set_servo_position(SERVO_H, val)
+    elif var == "speed":
+        DUTY = max(0, min(val, 240))
+    elif var == "led":
+        pi.set_PWM_dutycycle(LED, max(0, min(val, 255)))
 
-    return('', 204)
+    return '', 204
 
+def car_control(val):
+    """Обработка движения машины."""
+    if val == 1:
+        forwards()
+    elif val == 2:
+        left()
+    elif val == 3:
+        stop_motors()
+    elif val == 4:
+        right()
+    elif val == 5:
+        backwards()
 
-    
-def clientIsHere():
-    while(1):
-        cmd_out = subprocess.run(['hostapd_cli', 'all_sta'], stdout=subprocess.PIPE).stdout.decode('utf-8')
-        if (not len(cmd_out) > 27):
-            StopMotors()
-        time.sleep(0.5)
-
-
-        
 @app.route("/snapshot", methods=['GET'])
 def snapshot():
-    filename =  cwd + str(datetime.datetime.now()) + '.jpg'
-    subprocess.run([CAMSTREAM_SCRIPT, 'stop'])
-    time.sleep(0.5)
-    
-    with picamera.PiCamera() as camera:
-        try:
-            camera.resolution = (1920,1080)
+    """Сделать снимок с камеры."""
+    filename = f'{cwd}/{datetime.datetime.now()}.jpg'
+
+    try:
+        subprocess.run([CAMSTREAM_SCRIPT, 'stop'])
+        time.sleep(0.5)
+
+        with picamera.PiCamera() as camera:
+            camera.resolution = (1920, 1080)
             camera.rotation = 90
             camera.start_preview()
             camera.capture(filename)
             camera.stop_preview()
-        except picamera.exc.PiCameraMMALError as e:
-            print(e)
-        
-    if path.exists(filename) == False:
-        print("FILE NOT FOUND")
-            
 
-    subprocess.run([CAMSTREAM_SCRIPT, 'start'])
+    except picamera.exc.PiCameraMMALError as e:
+        logging.error(f"Ошибка камеры: {e}")
+        return jsonify({"error": "Ошибка камеры"})
+
+    finally:
+        subprocess.run([CAMSTREAM_SCRIPT, 'start'])
+
+    if not path.exists(filename):
+        logging.error("Файл не найден")
+        return jsonify({"error": "Снимок не сделан"})
+
     return send_file(filename)
-    
 
+def client_monitor():
+    """Мониторинг подключения клиента и остановка моторов, если клиент отключен."""
+    while True:
+        try:
+            cmd_out = subprocess.run(['hostapd_cli', 'all_sta'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+            if len(cmd_out) <= 27:
+                stop_motors()
+        except Exception as e:
+            logging.error(f"Ошибка мониторинга клиента: {e}")
+        time.sleep(0.5)
 
 if __name__ == '__main__':
-    motorsThread = Thread(target=clientIsHere)
-    motorsThread.start()
+    client_thread = Thread(target=client_monitor)
+    client_thread.start()
     subprocess.run([CAMSTREAM_SCRIPT, 'start'])
     app.run(debug=False, host='0.0.0.0', threaded=True)
-    
 
-        
     
